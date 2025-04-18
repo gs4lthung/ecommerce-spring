@@ -1,5 +1,9 @@
 package com.gemsi.inventoryservice.service;
 
+import com.gemsi.inventoryservice.dto.InventoryResponse;
+
+import java.util.List;
+
 public interface IInventoryService {
-    boolean isInStock(String skuCode);
+    List<InventoryResponse> isInStock(List<String> skuCode);
 }
